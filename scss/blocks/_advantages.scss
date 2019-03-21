@@ -1,0 +1,20 @@
+.advantages{
+    margin-top: 150px;
+    text-align: center;
+    .advantages__title{
+        margin-bottom: 25px;
+        font-weight: normal;
+        color: #ffad00;
+        font-size: 25px;
+    }
+    .advantages-item_description{
+        color: white;
+        font-weight: normal;
+        font-size: 21px;
+        margin-top: 10px;
+    }
+    .advantages-list{
+        display: flex;
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,24 @@
+body{
+    width: 1170px;
+    margin: auto;
+    background-image: url(../../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    font-family: Prototype;
+}
+a{
+    text-decoration: none;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+@media (max-width:480px){
+    body{
+        max-width: 480px;
+        margin: auto;
+        background-image: url(../../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+}
