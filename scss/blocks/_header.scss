@@ -12,7 +12,7 @@
                     font-size: 19px;
                     color: #ffad00;
                     text-decoration: none;
-                
+                }
                 .nav-list__link:hover{
                     color: white;
                 }
@@ -39,7 +39,7 @@
         }
     } 
 }
-@media (max-width: 480px){
+@media (max-width:480px){
     .page-header{
         .nav{
             .nav-list li > a{
@@ -48,20 +48,11 @@
             .button-menu__item{
                 display: block;
             }
-            
             .nav-logo{
                 position: absolute;
                 left: 50%;
                 transform: translateX(-50%);
-                transform: scale(0.5);
             }
-            
-            // .button-menu{
-            //     position: absolute;
-            //     left: 80%;
-            //     transform: translateX(80%);
-            // }
-            
         }
     }
 }

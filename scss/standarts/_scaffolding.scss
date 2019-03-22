@@ -3,7 +3,7 @@ body{
     margin: auto;
     background-image: url(../../images/background.jpg);
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
     font-family: Prototype;
 }
 a{
@@ -13,12 +13,14 @@ a{
     margin: 0;
     padding: 0;
 }
-@media (max-width:480px){
+@media (max-width: 480px){
     body{
-        max-width: 480px;
-        margin: auto;
-        background-image: url(../../images/background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+       max-width: 480px;
+       background-image: url(../../images/background-image.jpg); 
+       background-repeat: no-repeat;
+       background-size: cover;
+       background-position: center center;
+       
     }
+
 }
