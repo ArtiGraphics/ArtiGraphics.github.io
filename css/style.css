@@ -53,21 +53,6 @@
   display: none;
 }
 
-@media (max-width: 480px) {
-  .page-header .nav .nav-list li > a {
-    display: none;
-  }
-  .page-header .nav .button-menu__item {
-    display: block;
-  }
-  .page-header .nav .nav-logo {
-    position: absolute;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-  }
-}
-
 .about-me {
   text-align: center;
   margin-top: 800px;
@@ -149,10 +134,19 @@
 body {
   width: 1170px;
   margin: auto;
+  font-family: Prototype;
+}
+
+.body-index {
   background-image: url(../../images/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: Prototype;
+}
+
+.body-portfolio {
+  background-image: url(../../images/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 a {
@@ -162,14 +156,4 @@ a {
 * {
   margin: 0;
   padding: 0;
-}
-
-@media (max-width: 480px) {
-  body {
-    max-width: 480px;
-    background-image: url(../../images/background-image.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-  }
 }

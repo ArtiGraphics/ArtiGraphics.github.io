@@ -39,20 +39,3 @@
         }
     } 
 }
-@media (max-width:480px){
-    .page-header{
-        .nav{
-            .nav-list li > a{
-                display: none;
-            }
-            .button-menu__item{
-                display: block;
-            }
-            .nav-logo{
-                position: absolute;
-                left: 50%;
-                transform: translateX(-50%);
-            }
-        }
-    }
-}
