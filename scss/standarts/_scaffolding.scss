@@ -1,12 +1,13 @@
 body{
     font-family: Prototype;
-    background-image:  url(../../images/background.png);         
+    background-image: url(../../images/background.png);   
+    background-color: black;      
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+
 *{
-    
     margin: 0;
     padding: 0;
 }
@@ -26,4 +27,18 @@ button{
     font-family: inherit;
     color: inherit;
     background-color: transparent;
+}
+h2{
+    margin-bottom: 25px;
+    text-align: center;
+    color: #ffad00;
+    font-family: Prototype, arial;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 46px;
+}
+@media (min-width: 0px) and (max-width: 480px){
+    body{
+        background-repeat: repeat-y;
+    }
 }
