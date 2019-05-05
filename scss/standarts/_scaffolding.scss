@@ -1,22 +1,29 @@
 body{
-    width: 1170px;
-    margin: auto;
     font-family: Prototype;
-}
-.body-index{
-    background-image: url(../../images/background.jpg);
+    background-image:  url(../../images/background.png);         
     background-repeat: no-repeat;
     background-size: cover;
 }
-.body-portfolio{
-    background-image: url(../../images/background.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-a{
-    text-decoration: none;
-}
+
 *{
+    
     margin: 0;
     padding: 0;
+}
+.block-title{
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: normal;
+    font-size: 32px;
+    font-style: italic;
+    font-family: "Prototype";
+    line-height: 1.2;
+    color: #ffad00;
+}
+button{
+    padding: 0;
+    border: none;
+    font-family: inherit;
+    color: inherit;
+    background-color: transparent;
 }

@@ -1,41 +1,96 @@
 .page-header{
-    margin-top: 80px;
-    .nav{
-        .nav-list{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            .nav-list__item{
-                list-style: none;
-                .nav-list__link{
-                    font-family: Prototype;
-                    font-size: 19px;
-                    color: #ffad00;
-                    text-decoration: none;
-                }
-                .nav-list__link:hover{
-                    color: white;
-                }
-            }
-        }
-        .sub-menu{
-            position: absolute;
-            display: none;
-            margin-left: 10px;
-            margin-top: 0px;
-            .sub-menu__item{
-                margin: 5px 0px;
-                .sub-menu__link{
-                  color: #ffad00;
-                  font-size: 19px;
-                }
-            }
-        }
-        .sub-menu_active:hover .sub-menu{
-            display: block;
-        }
-        .button-menu__item{
-            display: none;
-        }
-    } 
+  width: 100%;
+  background-image:   url(../images/promo.png);
+  background-position: top center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 1150px;
+  position: relative;
+}
+
+.nav{
+    margin: 0px auto;
+    padding-top: 100px;
+    width: 1200px; 
+}
+.nav-list{ 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+.nav-list__item{ 
+    list-style: none; 
+}
+.nav-list__link{ 
+    font-family: Prototype; 
+    font-size: 20px; 
+    color: #ffad00; 
+    text-decoration: none; 
+} 
+.nav-list__link:hover{ 
+    color: white; 
+} 
+.nav__icon{
+    display: none;
+}
+
+
+@media (min-width: 1200px) and (max-width: 1500px){
+  .nav{
+      transform: scale(0.9);
+    }
+   .page-header{
+    background-position-y: 40px;
+    }
+}
+@media (min-width: 0px) and (max-width: 1200px) {
+    .nav-list__link:hover{ 
+       color: none;
+     } 
+   .page-header{
+       background: none;
+   }
+   .nav{
+      margin: 0px auto;
+      padding-top: 0px;
+      width: 100%;
+    }
+    .nav__icon{
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        left: 90%;
+        top: 100px;
+        
+    }
+   .nav-list{
+       flex-direction: column;
+   }
+   .nav__logo{
+       margin-top: 60px;
+       width: 300px;
+       height: 80px;
+    }
+   .nav-list__item{
+       text-align: center;
+       width: 100%;
+   }
+   .nav-list__link{
+       display: none;
+       color: white;
+       padding: 20px 0px;
+       border-bottom: 1px solid #ffad00;
+       background-color: rgba(3, 3, 3, 0.9);
+    }
+    .nav-list--active{
+        display: block;
+    }
+}
+@media (min-width: 0px) and (max-width: 400px) {
+    .nav-list--logo{
+        transform: scale(0.8);
+    }
+    .nav__icon{
+        transform: scale(0.7);
+    }
 }

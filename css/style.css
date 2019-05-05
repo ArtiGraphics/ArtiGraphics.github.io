@@ -1,8 +1,20 @@
 .page-header {
-  margin-top: 80px;
+  width: 100%;
+  background-image: url(../images/promo.png);
+  background-position: top center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 1150px;
+  position: relative;
 }
 
-.page-header .nav .nav-list {
+.nav {
+  margin: 0px auto;
+  padding-top: 100px;
+  width: 1200px;
+}
+
+.nav-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14,95 +26,90 @@
           align-items: center;
 }
 
-.page-header .nav .nav-list .nav-list__item {
+.nav-list__item {
   list-style: none;
 }
 
-.page-header .nav .nav-list .nav-list__item .nav-list__link {
+.nav-list__link {
   font-family: Prototype;
-  font-size: 19px;
+  font-size: 20px;
   color: #ffad00;
   text-decoration: none;
 }
 
-.page-header .nav .nav-list .nav-list__item .nav-list__link:hover {
+.nav-list__link:hover {
   color: white;
 }
 
-.page-header .nav .sub-menu {
-  position: absolute;
-  display: none;
-  margin-left: 10px;
-  margin-top: 0px;
-}
-
-.page-header .nav .sub-menu .sub-menu__item {
-  margin: 5px 0px;
-}
-
-.page-header .nav .sub-menu .sub-menu__item .sub-menu__link {
-  color: #ffad00;
-  font-size: 19px;
-}
-
-.page-header .nav .sub-menu_active:hover .sub-menu {
-  display: block;
-}
-
-.page-header .nav .button-menu__item {
+.nav__icon {
   display: none;
 }
 
-.about-me {
-  text-align: center;
-  margin-top: 800px;
+@media (min-width: 1200px) and (max-width: 1500px) {
+  .nav {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  .page-header {
+    background-position-y: 40px;
+  }
 }
 
-.about-me .about-me__title {
-  margin-bottom: 30px;
-  font-weight: normal;
-  color: #ffad00;
-  font-size: 25px;
+@media (min-width: 0px) and (max-width: 1200px) {
+  .nav-list__link:hover {
+    color: none;
+  }
+  .page-header {
+    background: none;
+  }
+  .nav {
+    margin: 0px auto;
+    padding-top: 0px;
+    width: 100%;
+  }
+  .nav__icon {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    left: 90%;
+    top: 100px;
+  }
+  .nav-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nav__logo {
+    margin-top: 60px;
+    width: 300px;
+    height: 80px;
+  }
+  .nav-list__item {
+    text-align: center;
+    width: 100%;
+  }
+  .nav-list__link {
+    display: none;
+    color: white;
+    padding: 20px 0px;
+    border-bottom: 1px solid #ffad00;
+    background-color: rgba(3, 3, 3, 0.9);
+  }
+  .nav-list--active {
+    display: block;
+  }
 }
 
-.about-me .about-me__text {
-  color: white;
-  letter-spacing: 1px;
-  line-height: 1.4;
-  font-size: 20px;
-}
-
-.advantages {
-  margin-top: 150px;
-  text-align: center;
-  margin-bottom: 150px;
-}
-
-.advantages .advantages__title {
-  margin-bottom: 30px;
-  font-weight: normal;
-  color: #ffad00;
-  font-size: 25px;
-}
-
-.advantages .advantages-item_description {
-  color: white;
-  font-weight: normal;
-  font-size: 21px;
-  margin-top: 10px;
-}
-
-.advantages .advantages-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.advantages .advantages-item {
-  width: 214px;
+@media (min-width: 0px) and (max-width: 400px) {
+  .nav-list--logo {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  .nav__icon {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
 }
 
 @font-face {
@@ -120,28 +127,32 @@
 }
 
 body {
-  width: 1170px;
-  margin: auto;
   font-family: Prototype;
-}
-
-.body-index {
-  background-image: url(../../images/background.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.body-portfolio {
   background-image: url(../../images/background.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-a {
-  text-decoration: none;
-}
-
 * {
   margin: 0;
   padding: 0;
+}
+
+.block-title {
+  margin-bottom: 40px;
+  text-align: center;
+  font-weight: normal;
+  font-size: 32px;
+  font-style: italic;
+  font-family: "Prototype";
+  line-height: 1.2;
+  color: #ffad00;
+}
+
+button {
+  padding: 0;
+  border: none;
+  font-family: inherit;
+  color: inherit;
+  background-color: transparent;
 }
